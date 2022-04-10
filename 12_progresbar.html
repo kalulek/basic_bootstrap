@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>progresss bars</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+  <body class="container">
+    <h1><u>Bootstrap Progress Bar</u></h1>
+    <!---To create a default progress bar, add a .progress class to a container element and add the .progress-bar class to it's child element. use the CCs width propert to set the width of the progress bar-->
+    <h2>1.Default progress bar</h2>
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%"></div>
+    </div>
+    <br />
+    <div class="progress">
+      <div class="progress-bar" style="width: 80%"></div>
+    </div>
+    <h2>Progress Bar Height</h2>
+    <!---The height of the progress bar is 16px by default. Use the CSS height property to change it. Note that you must set same height for the progress container and the progress bar-->
+    <div class="progress" style="height: 25px">
+      <div class="progress-bar" style="height: 25px; width: 63%"></div>
+    </div>
+    <h3>Progress bar label</h3>
+    <!--add text inside the progress bar -->
+    <div class="progress">
+      <div class="progress-bar" style="width: 94%">94%</div>
+    </div>
+    <h1>Colored Progress Bars</h1>
+    <div class="progress">
+      <div class="progress-bar bg-danger" style="width: 25%">25% danger</div>
+    </div>
+    <br />
+    <div class="progress" style="height: 30px">
+      <div class="progress-bar bg-success" style="width: 75%">75% success</div>
+    </div>
+    <br />
+    <div class="progress">
+      <div class="progress-bar bg-dark" style="width: 50%">50%</div>
+    </div>
+    <br />
+    <div class="progress">
+      <div class="progress-bar bg-warning" style="width: 17%">17%</div>
+    </div>
+    <h1>Striped Progress Bars</h1>
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-striped bg-secondary"
+        style="width: 70%"
+      ></div>
+    </div>
+    <br />
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-striped bg-warning"
+        style="width: 80%"
+      ></div>
+    </div>
+    <h2 class="text-success">Animated Progress Bar</h2>
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        style="width: 90%; height: 30px"
+      ></div>
+    </div>
+    <br />
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+        style="width: 58%"
+      >
+        58%
+      </div>
+    </div>
+    <h2 class="text-danger">Multiple Progress Bars</h2>
+    <div class="progress" style="height: 25px">
+      <div
+        class="progress-bar progress-bar-animated progress-bar-striped bg-primary"
+        style="width: 25%"
+      >
+        25%
+      </div>
+      <div
+        class="progress-bar progress-bar-animated progress-bar-striped bg-success"
+        style="width: 25%"
+      >
+        50%
+      </div>
+      <div
+        class="progress-bar progress-bar-animated progress-bar-striped bg-warning"
+        style="width: 25%"
+      >
+        75%
+      </div>
+      <div
+        class="progress-bar progress-bar-animated progress-bar-striped bg-danger"
+        style="width: 25%"
+      >
+        100%
+      </div>
+    </div>
+  </body>
+</html>

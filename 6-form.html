@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="text-info text-center font-weight-bold text-uppercase">
+        Simple form Structure
+      </p>
+      <!---Simple Form Elements-->
+      <form action="" class="bg-warning">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="input your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="pass">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            required
+            id="pass"
+            placeholder="your password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="ur email"
+          />
+        </div>
+        <p class="form-text small">Upload your file</p>
+        <div class="form-group">
+          <label for="txtfile"> File Selection</label>
+          <input type="file" id="txtfile" />
+        </div>
+        <div class="checkbox">
+          <label for="check">
+            <input type="checkbox" id="check" /> Agree
+          </label>
+        </div>
+        <button type="Submit" class="btn btn-danger">submit</button>
+      </form>
+    </div>
+    <!--.form-inline.is a compact
+form.-->
+    <h1 class="text-center">Inline Form / compact Form</h1>
+    <div class="container-fluid">
+      <form action="" class="form-inline">
+        <div class="form-group">
+          <label for="surname">Surname:</label>
+          <input type="text" class="form-control" id="surname" />
+        </div>
+        <div class="form-group">
+          <label for="Em">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="Em"
+            placeholder="name@gmail.com"
+          />
+        </div>
+        <div class="form-group">
+          <button type="Send" class="btn btn-success float-md-right">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--Form with watermarks and screen readers. invisible labels-->
+    <h1 class="text-center text-capitalize text-warning">Invisible Label</h1>
+    <div class="container">
+      <form class="form-inline border">
+        <div class="form-group">
+          <label for="sname" class="sr-only">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="sname"
+            placeholder="Surname"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email2" class="sr-only">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email2"
+            placeholder="Email"
+          />
+        </div>
+        <div class="checkbox"><input type="checkbox" /> Remember</div>
+        <button type="Submit" class="btn btn-success float-md-right">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
